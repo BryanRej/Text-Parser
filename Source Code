@@ -1,6 +1,6 @@
 import re 
 
 net_log = "Kevin 2023-01-24 3:11:20 192.168.150.2 \Jahvon 2022-04-10 6:15:00 192.168.0.0 \Eric 2022-05-14 8:30:00 10.10.0.1 \Alex 2021-03-08 5:45:00 172.168.1.1"
-output = "\d+\.\d+\.\d+\.\d+"
+output = r"\d+\.\d+\.\d+\.\d+"
 
 print(re.findall(output, net_log))
